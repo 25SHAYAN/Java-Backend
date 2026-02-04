@@ -1,44 +1,31 @@
-package OOPs.P5;
-
-class Car {
-    private String brand;
-    private String color;
-    private int speed;
-
-    public Car(String brand, String color, int speed) {
-        this.brand = brand;
-        this.color = color;
-        this.speed = speed;
-    }
-
-    public void drive() {
-        System.out.println(brand + " (" + color + ") is driving at " + speed + " km/h");
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(int speed) {
-        if (speed > 0) {     // validation - encapsulation advantage
-            this.speed = speed;
-        } else {
-            System.out.println("Speed cannot be negative");
-        }
-    }
-}
-
-public class P1 {
-    public static void main(String[] args) {
-
-        Car c1 = new Car("Toyota", "Red", 200);
-        c1.drive();
-
-        // Modify using setter
-        c1.setSpeed(110);
-        System.out.println("Updated speed: " + c1.getSpeed());
-
-        Car c2 = new Car("Maruti", "Yellow", 100);
-        c2.drive();
-    }
-}
+//package OOPs.P7;
+// abstract class bank_accounts{
+//    //parent
+//    private String accno;
+//    private double balance;
+//public abstract void deposit(double amount);
+//public abstract void withdraw(double amount);
+//}
+//class savings extends bank_accounts{
+//     @Override
+//public void deposit(double amount)
+//{
+//    System.out.println("deposited");
+//}
+//    @Override
+//    public void withdraw(double amount)
+//    {
+//        System.out.println("withdrawn");
+//    }
+//}
+//class current extends bank_accounts{
+//
+//}
+//public class P1 {
+//    public static void main(String[] args) {
+//        savings s = new savings();
+//        s.deposit(100);
+//        bank_accounts s1 =  new savings();
+//        savings = new current();
+//    }
+//}
